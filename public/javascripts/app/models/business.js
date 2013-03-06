@@ -3,7 +3,7 @@ senchamvc.models.Business = new Ext.regModel('Business', {
   fields: [
     {name: 'id' , type: 'int'},
     {name: 'name', type: 'string'},
-    {name: 'address', type: 'string'}
+    {name: 'description', type: 'string'}
   ]
 });
 
@@ -11,15 +11,15 @@ senchamvc.stores.remoteBusinesses = new Ext.data.Store({
   id: 'remoteBusinesses',
   model: 'Business',
   proxy: {
-    type: 'ajax',
-    url: 'http://192.168.1.159:3000/businesses.json',
+    type: 'rest',
+    url: 'http://digitalfood.me/api/products',
     reader: {
-      type: 'json',
+      type: 'rest',
       root: 'businesses',
       record: 'business'
     },
     writer: {
-      type: 'json',
+      type: 'rest',
       record: 'business'
     }
   }
