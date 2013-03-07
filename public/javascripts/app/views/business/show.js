@@ -22,7 +22,7 @@ senchamvc.views.BusinessShow = Ext.extend(Ext.Panel, {
     {tpl: [
       '<h4>{name}</h4>',
       '<br />',
-      '<h4>{address}</h4>',
+      '<h4>{description}</h4>',
     ]},
   ],
   updateWithRecord: function(record) {
