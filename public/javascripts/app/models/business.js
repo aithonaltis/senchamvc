@@ -15,7 +15,7 @@ senchamvc.stores.remoteBusinesses = new Ext.data.Store({
     url: 'http://digitalfood.me/api/products',
     reader: {
       type: 'rest',
-      root: 'businesses',
+      root: 'products',
       record: 'business'
     },
     writer: {
