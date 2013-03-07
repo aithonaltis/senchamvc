@@ -27,7 +27,7 @@ senchamvc.views.BusinessIndex = Ext.extend(Ext.Panel, {
        '{name}',
        '</div>',
        '<div>',
-       '{address}',
+       '{description}',
        '</div>',
        '</tpl>'
     ),
